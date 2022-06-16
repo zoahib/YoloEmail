@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Travel Blog</string>
+    <string name="planeto">Planeto</string>
+    <string name="choose">choose</string>
+    <string name="Picture_name">picturename</string>
+    <string name="place">place</string>
+    <string name="short_description">short description</string>
+    <string name="long_description">Long description</string>
+    <string name="submit">Submit</string>
+    <string name="upload">upload</string>
+    <string name="login">login</string>
+</resources>

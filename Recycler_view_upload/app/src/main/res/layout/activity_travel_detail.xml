@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".TravelDetail"
+    android:id="@+id/linearLayout5">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/bg_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="258dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="214dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003"
+        tools:layout_conversion_absoluteHeight="235dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <ImageView
+            android:id="@+id/planet_img_info"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="40dp"
+            android:src="@drawable/ic_earth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.060000002" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView4"
+            android:layout_width="215dp"
+            android:layout_height="147dp"
+            android:background="#E42A2A"
+            android:backgroundTint="@color/secondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.96">
+
+
+            <TextView
+                android:id="@+id/title_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Earth"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/galaxy_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Milkyway Galaxy"
+                android:textColor="@color/subtext"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_info"
+                app:layout_constraintVertical_bias="0.24000001" />
+
+            <TextView
+                android:id="@+id/distance_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="61dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="54.6m km"
+                android:textColor="@color/subtext"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gravity_info"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/galaxy_info"
+                app:layout_constraintVertical_bias="0.567" />
+
+            <TextView
+                android:id="@+id/gravity_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="3.711 m/ss"
+                android:textColor="@color/subtext"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/distance_info"
+                app:layout_constraintTop_toBottomOf="@+id/galaxy_info" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="426dp"
+        android:layout_height="281dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#231717"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.16000003"
+        tools:layout_conversion_absoluteHeight="287dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="Overview"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#03A9F4"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/overview_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="134dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="1dp"
+                    android:text="Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the Red Planet."
+                    android:textColor="@color/subtext"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/button_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_footer"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Book Your Ride  >"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
